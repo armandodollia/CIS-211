@@ -1,0 +1,19 @@
+
+public class ScoreWorker_5_9 {
+
+	private String name;
+	private Double score;
+	
+	public ScoreWorker_5_9(final String name, final Double score){
+		this.name = name;
+		this.score = score;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public Double getScore(){
+		return score;
+	}
+}

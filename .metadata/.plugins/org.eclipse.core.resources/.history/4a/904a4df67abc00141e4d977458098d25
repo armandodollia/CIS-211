@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+
+
+public class PoundKilogramConverter_5_5 {
+
+	public static void main(String[] args) {
+		
+		final String KILO = "Kilograms", POUND = "Pounds", PIPE = "|";
+		String print;
+		Integer j = 5;
+		
+		System.out.printf("%-8s%8s%-5s%-8s%8s\n", KILO, POUND, PIPE, POUND, KILO);
+		
+		for(int i = 1; i < 200; i+=2){
+			print = String.format("%-8d%9.1f", i, (i * 2.2));
+			System.out.println(print);
+		}
+
+	}
+
+}

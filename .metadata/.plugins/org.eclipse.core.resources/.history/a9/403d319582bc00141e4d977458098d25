@@ -1,0 +1,29 @@
+import java.util.List;
+
+
+public class Sort_5_9 {
+
+	private List<ScoreWorker_5_9> list;
+
+	public Sort_5_9(List<ScoreWorker_5_9> list){
+		this.list = list;
+
+		int n = list.size();
+		boolean swapped = true;
+		while(swapped){
+			for(int i=1; i<n; i++){
+				if(list.get(i-1).getScore() > list.get(i).getScore()){
+					ScoreWorker_5_9 x = list.get(i);
+					list.set(i, list.get(i-1));
+					list.set(i-1, x);
+					swapped = true;
+				}
+			}
+		}
+	}
+	
+	public List<ScoreWorker_5_9> getList(){
+		return list;
+	}
+	
+}

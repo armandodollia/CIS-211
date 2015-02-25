@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+/**
+ * @author Armando Dollia
+ * dollia.armando@gmail.com
+ *
+ */
+
+public class HighestScores_5_9 {
+
+	public static void main(String[] args) {
+		Integer students = 0;
+		String name = "";
+		Double score = 0.0;	
+		Scanner input = new Scanner(System.in);
+		List<ScoreWorker_5_9> list = new ArrayList<ScoreWorker_5_9>();
+		
+		
+		System.out.println("Number of students: ");
+		students = input.nextInt();
+		
+		for(int i = 1; i <= students; i++){
+			System.out.println("Please enter the name and score of student " + i + ":");
+			name = input.next();
+			score = input.nextDouble();
+			ScoreWorker_5_9 scores = new ScoreWorker_5_9(name, score);
+			list.add(scores);
+		}
+		
+		Sort_5_9 sort = new Sort_5_9(list);
+		System.out.print(sort.getList().get(0));
+		
+		
+		input.close();
+	}
+
+}
