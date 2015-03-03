@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+
+public class PrintDistinctNumbers_7_5 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		Integer[] noFilter = new Integer[10];
+		boolean exists;
+		Integer n=0;
+		String output = "The distinct numbers are:";
+		
+		System.out.print("Enter ten numbers: ");
+		for(int i = 0; i < 10; i++){
+			noFilter[i] = input.nextInt();
+		}
+		
+		Integer[] filter = new Integer[10 - duplicateCount(noFilter)];
+		
+		for(int i = 0; i < 10; i++){
+			exists = false;
+			for(int j = 0; j < i; j++){
+				if(noFilter[i] == noFilter[j]){
+					exists = true;
+				}
+				if(exists != true){
+					filter[n] = noFilter[i];
+					n++;
+				}
+			}
+			
+		}
+		
+		for(int i = 0; i < filter.length; i++){
+			output += " " + filter[i];
+		}
+		
+		System.out.ptint("The number of distinct numbers is: " + filter.length + "\n" + output);
+		
+	}
+	
+	public static Integer duplicateCount(Integer[] noFilter){
+		Integer duplicates = 0;
+		for(int i = 0; i < 10; i++){
+			duplicate = false;
+			for(int j = 0; j < i; j++){
+				if(noFilter[i] == noFilter[j]){
+					duplicates++;
+				}
+			}
+			
+			for(int j = i+1; j < 10; j++){
+				if(noFilter[i] == noFilter[j]){
+					duplicates++;
+				}
+			}
+		}
+		return duplicates;
+	}
+
+}
