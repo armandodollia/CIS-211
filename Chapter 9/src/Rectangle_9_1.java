@@ -1,7 +1,7 @@
 
 public class Rectangle_9_1 {
 	
-	private double width = 1.0, height = 1.0;
+	public double width = 1.0, height = 1.0;
 
 	public Rectangle_9_1(){
 		this(1.0,1.0);
