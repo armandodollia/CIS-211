@@ -1,0 +1,37 @@
+
+public class Time {
+
+	private int hours, minutes, seconds;
+	private long currentTime, setTime;
+	
+	
+	
+	public Time(){
+		this(System.currentTimeMillis());
+	}
+	
+	public Time(int hours, int minutes, int seconds){
+		this.hours = hours;
+		this.minutes = minutes;
+		this.seconds = seconds;
+	}
+	
+	public Time(long currentTime){
+		this.currentTime = currentTime;
+		seconds = (int) (currentTime / 1000) % 60 ;
+		minutes = (int) ((currentTime / (1000*60)) % 60);
+		hours   = (int) ((currentTime / (1000*60*60)) % 24);
+	}
+	
+	public int getHours(){
+		return hours;
+	}
+	
+	public int getMinutes(){
+		return minutes;
+	}
+	
+	public int getSeconds(){
+		return seconds;
+	}
+}
