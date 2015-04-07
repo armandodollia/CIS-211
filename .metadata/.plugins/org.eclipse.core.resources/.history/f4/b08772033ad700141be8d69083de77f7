@@ -11,10 +11,8 @@ public class Drive_10_3 {
 		
 		Scanner input = new Scanner(System.in);
 		System.out.println("Input an integer");
-		MyInteger intTest = new MyInteger(input.nextInt());
-		if(MyInteger.isEven()){
-			
-		}
+		input.nextInt();
+		MyInteger 
 		System.out.println();
 
 		System.out.println("Input a 5 digit number ");

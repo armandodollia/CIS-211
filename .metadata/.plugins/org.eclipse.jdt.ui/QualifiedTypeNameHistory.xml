@@ -6,9 +6,11 @@
 <fullyQualifiedTypeName name="ScoreWorker_5_9"/>
 <fullyQualifiedTypeName name="Sort_5_9"/>
 <fullyQualifiedTypeName name="Pentagon_6_1"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="Rectangle_9_1"/>
 <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
 <fullyQualifiedTypeName name="RegularPolygon_9_9"/>
+<fullyQualifiedTypeName name="Time"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="MyInteger"/>
 </qualifiedTypeNameHistroy>

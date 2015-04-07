@@ -8,7 +8,7 @@ public class MyInteger {
 	}
 	
 	public MyInteger(int value){
-		this.value = value;
+		MyInteger.value = value;
 	}
 	
 	public int parseInt(String number){
@@ -26,10 +26,6 @@ public class MyInteger {
 		}
 	}
 	
-	public boolean equals(MyInteger n){
-		return this.equals(n.getValue());
-	}
-	
 	public int parseInt(char[] array){
 		String numStr = "";
 		for(int i = 0; i < array.length; i++){
@@ -39,20 +35,17 @@ public class MyInteger {
 		return value;
 	}
 	
-	public boolean isEven(){
-		return value % 2 == 0;
-	}
-	
-	public static boolean isEven(MyInteger n){
-		return n.isEven();
+	public boolean isEven(int n){
+		return n % 2 == 0;
 	}
 	
 	public boolean isOdd(){
-		return ! this.isEven();
-	}
-	
-	public static boolean isOdd(MyInteger n){
-		return n.isOdd();
+		if( value % 2 != 0){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 	
 	public boolean isPrime(){
@@ -65,10 +58,6 @@ public class MyInteger {
 			i++;
 		}
 		return prime;
-	}
-	
-	public static boolean isPrime(MyInteger n){
-		return n.isPrime();
 	}
 	
 	public int getValue(){

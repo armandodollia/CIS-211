@@ -27,7 +27,7 @@ public class MyInteger {
 	}
 	
 	public boolean equals(MyInteger n){
-		return this.equals(n.getValue());
+		
 	}
 	
 	public int parseInt(char[] array){
